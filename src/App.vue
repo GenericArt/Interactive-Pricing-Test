@@ -1,17 +1,17 @@
 <template>
-  <!-- <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+  <Paragraph msg="Simple, traffic-based pricing" size="40" fontcolor="2a536b"/>
+  <Paragraph msg="Sign-up for our 30-day trial. No credit card required." size="20" fontcolor="7a7a7a"/>
   <FloatingPopup width="700" height="450" />
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
+import Paragraph from './components/ParaG.vue'
 import FloatingPopup from './components/FloatingContainer.vue'
 
 export default {
   name: 'App',
   components: {
-    // HelloWorld,
+    Paragraph,
     FloatingPopup,
   }
 }

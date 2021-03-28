@@ -10,17 +10,24 @@ export default {
         size: {
             type: String,
             default: "20"
+        },
+        fontcolor: {
+            style: String,
+            default: '545454'
         }
     },
     data(){
         return{
-            fontsize: this.size
+            fontsize: this.size,
+            btnfontcolor: this.fontcolor,
         }
     },
     computed: {
         cssVars() {
             return {
                 '--size': this.size + 'px',
+                '--btnfontcolor': "#" + this.btnfontcolor,
+                
             }
         }
     }
@@ -32,7 +39,7 @@ export default {
 
 p{
     font-size: var(--size);
-    color: rgb(155, 158, 158);
+    color: var(--btnfontcolor);
     font-family: 'Raleway', sans-serif;
 }
 

@@ -1,7 +1,7 @@
 <template>
     <div id="container" :style="cssVars">
         <Paragraph msg="Manley" size="50"/>
-        <ButtonTypeOne msg="Start my trial" width="150" height="36" />
+        <ButtonTypeOne msg="Start my trial" width="150" height="36" bgcolor="34477d"/>
     </div>
 </template>
 
