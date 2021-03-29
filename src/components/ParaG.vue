@@ -14,20 +14,25 @@ export default {
         fontcolor: {
             style: String,
             default: '545454'
+        },
+        fontweight: {
+            style: String,
+            default: "400"
         }
     },
     data(){
         return{
             fontsize: this.size,
-            btnfontcolor: this.fontcolor,
+            parfontcolor: this.fontcolor,
+            parfontweight: this.fontweight,
         }
     },
     computed: {
         cssVars() {
             return {
                 '--size': this.size + 'px',
-                '--btnfontcolor': "#" + this.btnfontcolor,
-                
+                '--btnfontcolor': "#" + this.parfontcolor,
+                '--parfontweight': this.parfontweight,
             }
         }
     }
@@ -35,12 +40,15 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 
 p{
     font-size: var(--size);
     color: var(--btnfontcolor);
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-weight: var(--parfontweight);
 }
 
 </style>

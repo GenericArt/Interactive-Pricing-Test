@@ -25,6 +25,10 @@ export default {
         fontcolor: {
             style: String,
             default: '#f7f7f7'
+        },
+        fontsize: {
+            style: String,
+            default: "12"
         }
     },
     data(){
@@ -33,6 +37,7 @@ export default {
             btnheight: this.height,
             btnbgcolor: this.bgcolor,
             btnfontcolor: this.fontcolor,
+            btnfontsize: this.fontsize,
         }
     },
     computed: {
@@ -41,7 +46,8 @@ export default {
                 '--btnheight': this.btnheight + "px",
                 '--btnwidth': this.btnwidth + "px",
                 '--btnbgcolor': "#" + this.btnbgcolor,
-                '--btnfontcolor': this.btnfontcolor,
+                '--btnfontcolor': "#" + this.btnfontcolor,
+                '--btnfontsize': this.btnfontsize + "px",
             }
         }
     }
@@ -49,7 +55,8 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 #button{
     width: var(--btnwidth);
@@ -62,9 +69,9 @@ export default {
     text-align: center;
     line-height: var(--btnheight);
     background-color: var(--btnbgcolor);
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Rubik', sans-serif;
     transition: all 0.2s;
-    
+    font-size: var(--btnfontsize);
 }
 
 #button:hover{

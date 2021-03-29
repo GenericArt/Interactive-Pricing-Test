@@ -1,5 +1,5 @@
 <template>
-  <Paragraph msg="Simple, traffic-based pricing" size="40" fontcolor="2a536b"/>
+  <Paragraph msg="Simple, traffic-based pricing" size="40" fontcolor="2a536b" fontweight="500"/>
   <Paragraph msg="Sign-up for our 30-day trial. No credit card required." size="20" fontcolor="7a7a7a"/>
   <FloatingPopup width="700" height="450" />
 </template>
